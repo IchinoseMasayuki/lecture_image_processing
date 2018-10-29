@@ -22,7 +22,7 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
 同様に原画像を1/4サンプリングするには，画像を1/2倍に縮小した後，2倍に拡大すればよい．すなわち，
 
-IMG = imresize(ORG,0.5); % 画像の縮小  
+IMG = imresize(IMG2,0.5); % 画像の縮小  
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
 とする．1/4サンプリングの結果を図３に示す．
@@ -32,7 +32,7 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
 1/8から1/32サンプリングは，
 
-IMG = imresize(ORG,0.5); % 画像の縮小  
+IMG = imresize(IMG2,0.5); % 画像の縮小  
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
 を繰り返す．サンプリングの結果を図４～６に示す．
