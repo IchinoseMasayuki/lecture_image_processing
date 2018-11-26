@@ -9,7 +9,7 @@ imagesc(ORG); axis image; % 画像の表示
 
 によって，原画像を読み込み，表示した結果を図１に示す．
 
-![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/zu2-1.bmp?raw=true)  
 図1 原画像
 
 
@@ -18,7 +18,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 によって二階調画像を生成し、表示した結果を図２に示す。
 
-![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/zu2-2.bmp?raw=true)  
 図２ 二階調画像
 
 IMG0 = ORG>64;
@@ -30,7 +30,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 によって、四階調画像を生成し、表示した結果を図３に示す。
 
 
-![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/zu2-3.bmp?raw=true)  
 図３ 四階調画像
 
 IMG0 = ORG>32;
@@ -46,5 +46,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 によって、八階調画像を生成し、表示した結果を図４に示す。
 
 
-![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/zu2-4.bmp?raw=true)  
 図４ 八階調画像
+
+以上の結果から、階調数を増やすことで画像をより鮮明に表示できることが分かった。
