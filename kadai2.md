@@ -1,1 +1,50 @@
 
+# 課題２レポート
+
+標準画像「niwatori」を原画像とする．この画像は縦640画像，横512画素による正方形のディジタルカラー画像である．
+
+ORG=imread('niwatori.jpg'); % 原画像の入力
+ORG = rgb2gray(ORG); colormap(gray); colorbar;
+imagesc(ORG); axis image; % 画像の表示
+
+によって，原画像を読み込み，表示した結果を図１に示す．
+
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+図1 原画像
+
+
+IMG = ORG>128;
+imagesc(IMG); colormap(gray); colorbar;  axis image;
+
+によって二階調画像を生成し、表示した結果を図２に示す。
+
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+図２ 二階調画像
+
+IMG0 = ORG>64;
+IMG1 = ORG>128;
+IMG2 = ORG>192;
+IMG = IMG0 + IMG1 + IMG2;
+imagesc(IMG); colormap(gray); colorbar;  axis image;
+
+によって、四階調画像を生成し、表示した結果を図３に示す。
+
+
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+図３ 四階調画像
+
+IMG0 = ORG>32;
+IMG1 = ORG>64;
+IMG2 = ORG>96;
+IMG3 = ORG>128;
+IMG4 = ORG>160;
+IMG5 = ORG>192;
+IMG6 = ORG>224;
+IMG = IMG0 + IMG1 + IMG2 + IMG3 + IMG4 + IMG5 + IMG6;
+imagesc(IMG); colormap(gray); colorbar;  axis image;
+
+によって、八階調画像を生成し、表示した結果を図４に示す。
+
+
+![原画像](https://github.com/IchinoseMasayuki/lecture_image_processing/blob/master/image/origin.jpg?raw=true)  
+図４ 八階調画像
