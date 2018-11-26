@@ -13,7 +13,7 @@ imagesc(ORG); axis image; % 画像の表示
 図1 原画像
 
 
-IMG = ORG>128;
+IMG = ORG>128;  
 imagesc(IMG); colormap(gray); colorbar;  axis image;  
 
 によって二階調画像を生成し、表示した結果を図２に示す。  
